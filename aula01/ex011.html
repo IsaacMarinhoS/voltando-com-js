@@ -5,9 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        div,
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p {
+            font-weight: 700;
+            font-size: x-large;
+            padding: 0 10px;
+        }
+    </style>
 </head>
 
+<body>
 
+    <h1>Descrubra o país onde você nasceu</h1>
+    <div>
+        <p>Em que país você nasceu? </p><input type="text" id="pais">
+        <input type="button" value="verificar" onclick="verificar()">
+        <div id="verificacao"></div>
+    </div>
+
+    <script>
+        function verificar() {
+
+            var pais = window.document.getElementById("pais")
+            var verificacao = window.document.getElementById("verificacao")
+            var local = pais.value
+
+            if (local != "brasil") {
+                verificacao.innerHTML = "você é um estrangeiro"
+            } else { verificacao.innerHTML = "você é Brasileiro" }
+        }
+
+    </script>
 </body>
-
 </html>

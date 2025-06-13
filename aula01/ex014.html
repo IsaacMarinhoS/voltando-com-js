@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+
+    <style>
+        body {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .titulo {
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .div-horario {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            width: 600px;
+            height: 400px;
+            border-radius: 10px;
+
+        }
+
+        .hora {
+
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .imagem {
+            width: 300px;
+            height: 300px;
+            border-radius: 500px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body id="cor">
+    <h1 class="titulo">Hora do Dia</h1>
+    <div class="div-horario">
+        <div id="horaNaTela" class="hora"> </div>
+        <img id="imagem" class="imagem" src="" alt="imagem">
+    </div>
+
+    <p style="color: #ffffff; font-size: large;">© isaacMarinho</p>
+
+    <script>
+
+        var horaAgora = new Date()
+        var hora = horaAgora.getHours()
+        var minutos = horaAgora.getMinutes()
+        var segundos = horaAgora.getSeconds()
+        var horaNaTela = window.document.getElementById("horaNaTela")
+        var imagem = window.document.getElementById("imagem")
+        var corDoBody = window.document.getElementById("cor")
+        var corDoBody = window.document.getElementById("cor")
+
+        horaNaTela.innerHTML = `Agora são ${hora}:${minutos}:${segundos}`
+
+        if (hora >= 0 && hora < 12) {
+            corDoBody.style.background = "#eede86";
+            imagem.src = "https://sme.goiania.go.gov.br/conexaoescola/wp-content/uploads/2021/06/horses-5716127__340-e1623757162228.jpg";
+        } else if (hora >= 12 && hora < 18) {
+            corDoBody.style.background = "#9b6436";
+            imagem.src = "https://images.unsplash.com/photo-1544665216-ef253385d3a8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        } else if (hora >= 18 && hora < 23.59) {
+            corDoBody.style.background = "#353535";
+            imagem.src = "https://img.freepik.com/fotos-premium/ceu-noturno-com-estrelas_445280-1218.jpg?ga=GA1.1.1410876660.1749832135&semt=ais_hybrid&w=740";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendador de Filmes</title>
+    <link rel="stylesheet" href="ex017.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Recomendador de Filmes</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <p class="input">comedia <input type="radio" name="filme" id="radioComedia" value="comedia"></p>
+            <p class="input">ação <input type="radio" name="filme" id="radioAcao" value="acao"></p>
+            <p class="input">guerra <input type="radio" name="filme" id="radioGuerra" value="guerra"></p>
+            <p class="input">drama <input type="radio" name="filme" id="radioDrama" value="drama"></p>
+            
+
+        </div>
+
+        <div class="resposta">
+
+        </div>
+
+        <div class="container-botao"> <input class="botao" type="button" value="Procurar Filme" onclick=" verFilme()"></div>
+
+
+    </section>
+
+    <section>
+        <h2>🎭 Comédia</h2>
+        <div class="categoria">
+            <div class="filme comedia">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/5/54/Bean_Poster.jpg" alt="Mr. Bean">
+                <h1>Mr. Bean</h1>
+            </div>
+            <div class="filme comedia">
+                <img src="https://vejasp.abril.com.br/wp-content/uploads/2016/12/21004903_20130510170049514.jpeg?quality=70" alt="Gente Grande">
+                <h1>Gente Grande</h1>
+            </div>
+            <div class="filme comedia">
+                <img src="https://i0.wp.com/cinegrandiose.com/wp-content/uploads/The-Mask-1.png?w=960&ssl=1" alt="O Máskara">
+                <h1>O Máskara</h1>
+            </div>
+        </div>
+
+        <h2>🔥 Ação</h2>
+        <div class="categoria">
+            <div class="filme acao">
+                <img src="https://clube-static.clubegazetadopovo.com.br/portal/wp-content/uploads/2023/03/John-Wick-01.jpg" alt="John Wick 4">
+                <h1>John Wick 4</h1>
+            </div>
+            <div class="filme acao">
+                <img src="https://musicart.xboxlive.com/7/bad55000-0000-0000-0000-000000000002/504/image.jpg?q=90&m=6&h=270&w=270&b=%23FFFFFFFF&f=jpg&o=f&aim=true"
+                    alt="Missão Impossível: Fallout">
+                <h1>Missão Impossível: Fallout</h1>
+            </div>
+            <div class="filme acao">
+                <img src="https://musicart.xboxlive.com/7/3d6c5100-0000-0000-0000-000000000002/504/image.jpg"
+                    alt="Mad Max: Estrada da Fúria">
+                <h1>Mad Max: Estrada da Fúria</h1>
+            </div>
+        </div>
+
+        <h2>⚔️ Guerra</h2>
+        <div class="categoria">
+            <div class="filme guerra">
+                <img src="https://sm.ign.com/t/ign_br/screenshot/default/fotojet-2024-09-16t173134170_cz8u.960.jpg"
+                    alt="O Resgate do Soldado Ryan">
+                <h1>O Resgate do Soldado Ryan</h1>
+            </div>
+            <div class="filme guerra">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/ff/1917_poster.jpg/250px-1917_poster.jpg" alt="1917">
+                <h1>1917</h1>
+            </div>
+            <div class="filme guerra">
+                <img src="https://tf-univervideo-blog.s3-accelerate.amazonaws.com/capa_vertical_ate_ultimo_homem_2796fb7b01.jpg" alt="Até o Último Homem">
+                <h1>Até o Último Homem</h1>
+            </div>
+        </div>
+
+        <h2>🎭 Drama</h2>
+        <div class="categoria">
+            <div class="filme drama">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/c0/ForrestGumpPoster.jpg/250px-ForrestGumpPoster.jpg" alt="Forrest Gump">
+                <h1>Forrest Gump</h1>
+            </div>
+            <div class="filme drama">
+                <img src="https://s2-quem.glbimg.com/ZM7H6XO3l0WTF5ihe9nW_ppfHRw=/0x0:606x370/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2024/J/e/cFWPCvS9SaBtzDz8FxDA/sem-titulo-11.jpg" alt="À Procura da Felicidade">
+                <h1>À Procura da Felicidade</h1>
+            </div>
+            <div class="filme drama">
+                <img src="https://cdn.culturagenial.com/imagens/1171710-jpg-r-1280-720-f-jpg-q-x-xxyxx-cke.jpg?class=article" alt="Green Book">
+                <h1>Green Book</h1>
+            </div>
+        </div>
+
+      
+    </section>
+
+    <footer></footer>
+
+    <script src="ex017.js"></script>
+
+</body>
+
+</html>

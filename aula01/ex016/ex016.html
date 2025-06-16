@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corporal</title>
+    <link rel="stylesheet" href="ex016.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Verificador de Índice de Massa Corporal</h1>
+    </header>
+    <section>
+
+        <div>
+            <div class="input">
+                <p class="input-config">digite sua altura:</p> <input type="number" id="altura">
+            </div>
+
+            <div class="input">
+                <p class="input-config">digite seu peso:</p> <input type="number" id="peso">
+            </div>
+        </div>
+
+        <div class="calcular">
+            <input class="calcular-config" type="button" value="calcular" onclick="calcular()">
+
+        </div>
+
+        <div class="msg">
+            <div class="msg-config" id="msg">Preencha acima para que o seu imc seja calculado</div>
+        </div>
+        <div class="msg">
+            <div class="msg-config" id="descricao"> </div>
+        </div>
+
+    </section>
+
+    <script src="ex016.js"></script>
+
+</body>
+
+</html>

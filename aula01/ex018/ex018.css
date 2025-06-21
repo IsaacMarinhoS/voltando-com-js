@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(0, 140, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-p {
+    padding: 0 10px;
+    font-size: xx-large; 
+   
+}
+
+.container-input {
+    
+    width: 20px;
+    height: 20px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.botao-resultado {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.resposta {
+     display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin: 30px;
+    font-size: x-large;
+}
